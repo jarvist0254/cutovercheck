@@ -1,0 +1,30 @@
+name: Bug Report
+description: Report a reproducible issue or defect
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue with CutoverCheck by JE Horizon!
+  - type: input
+    id: version
+    attributes:
+      label: Application Version
+      description: What version is shown in the app settings/about page?
+      placeholder: e.g. 1.0.5
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the behavior you observed.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can our team reproduce this?
+    validations:
+      required: true
